@@ -1,0 +1,160 @@
+
+@import "tailwindcss";
+
+
+@theme {
+
+  /* Colors */
+
+  --color-primary: #4c3024;
+  --color-secondary: #2D211C;
+  --color-dark: #1f2937;
+  --color-light: #f8fafc;
+
+
+  /* Font */
+
+  --font-sans: Inter, sans-serif;
+
+}
+
+
+
+/* ================================
+   Base Styles
+================================ */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@layer base {
+
+  body {
+
+    @apply
+    bg-light
+    text-dark
+    font-sans
+    antialiased;
+
+  }
+
+
+  * {
+
+    @apply box-border;
+
+  }
+
+
+  img {
+
+    @apply block max-w-full;
+
+  }
+
+}
+
+
+
+/* ================================
+   Reusable Components
+================================ */
+
+
+@layer components {
+
+
+  /* Container */
+
+  .container-custom {
+
+    @apply
+    max-w-7xl
+    mx-auto
+    px-4
+    sm:px-6
+    lg:px-8;
+
+  }
+
+
+
+  /* Buttons */
+
+  .btn-primary {
+
+    @apply
+    bg-primary
+    text-white
+    px-6
+    py-3
+    rounded-full
+    font-medium
+    transition
+    hover:opacity-90;
+
+  }
+
+
+
+  .btn-outline {
+
+    @apply
+    border
+    border-primary
+    text-primary
+    px-6
+    py-3
+    rounded-full
+    font-medium
+    transition
+    hover:bg-primary
+    hover:text-white;
+
+  }
+
+
+
+  /* Cards */
+
+  .card {
+
+    @apply
+    bg-white
+    rounded-2xl
+    shadow-lg
+    overflow-hidden
+    transition
+    hover:-translate-y-1;
+
+  }
+
+
+
+  /* Section */
+
+  .section-title {
+
+    @apply
+    text-3xl
+    md:text-4xl
+    font-bold;
+
+  }
+
+
+
+  .section-description {
+
+    @apply
+    text-gray-500
+    mt-3;
+
+  }
+
+
+}
