@@ -1,5 +1,3 @@
-تمام، نحذف **Screenshots** و **Future Improvements** أيضًا، ونخليه قريب جدًا من README الذي أرسلته: مختصر، مرتب، ويركز على المشروع والـ CSP وطريقة التشغيل.
-
 # School Timetable Generator
 
 This project is a full-stack school timetable generator built with **Django REST Framework** and **React**.
